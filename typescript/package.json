@@ -1,0 +1,16 @@
+{
+  "name": "meibel-examples",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "meibel": "github:meibel-ai/meibel-typescript#v2.0.1"
+  },
+  "scripts": {
+    "postinstall": "node scripts/patch-sdk.js && cd node_modules/meibel && npx tsc -p tsconfig.json --noCheck 2>/dev/null || true"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.0.0",
+    "typescript": "^6.0.3"
+  }
+}

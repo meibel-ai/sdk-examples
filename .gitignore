@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+.idea/
+*.iml
+.venv/
+.env
+.ocrtmp/
+.starling_out/
+*.csv
